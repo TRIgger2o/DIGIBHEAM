@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="task1.css">
+      
+        <script>
+            function addToCart(productName, price) {
+                const cartList = document.getElementById('cart-list');
+                const cartItem = document.createElement('li');
+                cartItem.innerText = `${productName} - ${price}`;
+                cartList.appendChild(cartItem);
+                cartList.style.display = 'block';
+            }
+    
+            function toggleCart() {
+                const cartList = document.getElementById('cart-list');
+                cartList.style.display = cartList.style.display === 'none' ? 'block' : 'none';
+            }
+        </script>
+    <title>LANDING PAGE</title>
+</head>
+<body>
+  <header>
+        <h1>TRIGGER E-SHOP</E-SHOP></h1>
+         <nav>
+               <ul style="font-size: 125%;">
+                  <li><a href="HOME.html"><button>Home</button></a></li> 
+                    <li><a href=""><button>Products</button></a></li>
+                    <span class="clickable-text" style="text-align: center;">
+                        <button>Categories</button>
+                        <div class="options-container" style="align-items: center;">
+                          <a href="task1.html"><button>ASUS</button></a>
+                            <a href="t2.html"><button>DELL</button></a>
+                        </div>
+                    </span>
+                    
+                    <li class="cart">
+                        <button class="cart-button" onclick="toggleCart()">Cart</button>
+                        <table>
+                               <th>  <ul class="cart-list" id="cart-list"></ul></th>
+                        </table>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section style="text-align: center;">
+            <h2>Welcome to TRIGGER</h2>
+            <p>Discover the best deals on the latest products</p>
+          
+        </section>
+    
+        <section id="featured-products">
+            <h3>Featured Products</h3>
+            <div class="product">
+                <img src="dell.jpg" alt="Product 1">
+                <h4>Alienware m15 R7 Gaming Laptop</h4>
+                <p><small>Alienware-inspired thermal design features optimal cooling thanks to dual air-intake, <br>
+                    ultra-thin fan blades, copper pipes and four strategically-placed vents. As a result, you can expect <br>
+                     your system to stay cool when the action heats up. And with up to 12th Gen Intel® i5 12-core or i7 14-core <br>
+                      processors plus optimized performance profiles, you can revel in powerful and consistent high-end performance <br>
+                       during every gaming experience.</small></p>
+                <span class="price">₹1,69,990</span>
+                <button class="add-to-cart" onclick="addToCart('Product 1', '1,69,990')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="3.jpg"alt="Product 2">
+                <h4>Alienware m15 R7 Gaming Laptop
+                </h4>
+                <p><small>Welcome to the most life-like environments the gaming world has ever seen. Experience smooth, fast,<br>
+                     and stunning graphics as the developers intended with more contrast and vivid colors that go beyond the <br>
+                     traditional high dynamic range (HDR) with Dolby Vision™. Level up your experience with games, movies, and content <br>
+                      that are enabled with Dolby Vision™ and see what you've been missing. Feel the thrill of the game with these advanced <br>
+                       technologies on all available configurations.</small></p>
+                <span class="price">₹2,66,990</span>
+                <button class="add-to-cart" onclick="addToCart('Product 2', '₹2,66,990')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="PRODUCT-1.png" alt="Product 1">
+                <h4>Alienware x17 R2 Gaming Laptop</h4>
+                <p><small> <small>Game or create on the cutting edge with up to an AMD 
+                <br>Ryzen™ 9 7945HX processor and up to an NVIDIA®GeForce
+                    RTX™ 4090 Laptop GPU.<br> The Ryzen™ 9 7945HX CPU offers 
+                    incredible gaming and multitasking performance<br> letting you stream and render
+                     even the most intensive projects <br>while the powerful RTX™ 4090 Laptop GPU 
+                     guarantees incredible in-game framerates </small></small></p>
+                <span class="price">₹1,69,990</span>
+                <button class="add-to-cart" onclick="addToCart('Product 1', '1,69,990')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="product2.png" alt="Product 2">
+                <h4>ROG Zephyrus G14 (2023) GA402
+                </h4>
+                <p><small><small> For gamers who demand unbelievable motion and image clarity, the Zephyrus G14 offers an incredible 
+                   <br> Nebula HDR Display with a 165Hz refresh rate, 100% DCI-P3 coverage, and 600 nits of <br> peak brightness 
+                    for stunning HDR gameplay. The 14-inch, contentthat jumps right off the screen, whether you’re  <br>watching a movie or playing a fast-moving arena shooter.
+                      </small></small></p>
+                <span class="price">₹2,66,990</span>
+                <button class="add-to-cart" onclick="addToCart('Product 2', '₹2,66,990')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="PRODUCT-1.png" alt="Product 1">
+                <h4>ROG ZEPHYRUS DUO 16
+                    TWO SCREENS. ZERO BOUNDARIES.</h4>
+                <p><small> <small>Game or create on the cutting edge with up to an AMD 
+                <br>Ryzen™ 9 7945HX processor and up to an NVIDIA®GeForce
+                    RTX™ 4090 Laptop GPU.<br> The Ryzen™ 9 7945HX CPU offers 
+                    incredible gaming and multitasking performance<br> letting you stream and render
+                     even the most intensive projects <br>while the powerful RTX™ 4090 Laptop GPU 
+                     guarantees incredible in-game framerates </small></small></p>
+                <span class="price">₹1,69,990</span>
+                <button class="add-to-cart" onclick="addToCart('Product 1', '1,69,990')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="product2.png" alt="Product 2">
+                <h4>ROG Zephyrus G14 (2023) GA402
+                </h4>
+                <p><small><small> For gamers who demand unbelievable motion and image clarity, the Zephyrus G14 offers an incredible 
+                   <br> Nebula HDR Display with a 165Hz refresh rate, 100% DCI-P3 coverage, and 600 nits of <br> peak brightness 
+                    for stunning HDR gameplay. The 14-inch, contentthat jumps right off the screen, whether you’re  <br>watching a movie or playing a fast-moving arena shooter.
+                      </small></small></p>
+                <span class="price">₹2,66,990</span>
+                <button class="add-to-cart" onclick="addToCart('Product 2', '₹2,66,990')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="PRODUCT-1.png" alt="Product 1">
+                <h4>ROG ZEPHYRUS DUO 16
+                    TWO SCREENS. ZERO BOUNDARIES.</h4>
+                <p><small> <small>Game or create on the cutting edge with up to an AMD 
+                <br>Ryzen™ 9 7945HX processor and up to an NVIDIA®GeForce
+                    RTX™ 4090 Laptop GPU.<br> The Ryzen™ 9 7945HX CPU offers 
+                    incredible gaming and multitasking performance<br> letting you stream and render
+                     even the most intensive projects <br>while the powerful RTX™ 4090 Laptop GPU 
+                     guarantees incredible in-game framerates </small></small></p>
+                <span class="price">₹1,69,990</span>
+                <button class="add-to-cart" onclick="addToCart('Product 1', '1,69,990')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="product2.png" alt="Product 2">
+                <h4>ROG Zephyrus G14 (2023) GA402
+                </h4>
+                <p><small><small> For gamers who demand unbelievable motion and image clarity, the Zephyrus G14 offers an incredible 
+                   <br> Nebula HDR Display with a 165Hz refresh rate, 100% DCI-P3 coverage, and 600 nits of <br> peak brightness 
+                    for stunning HDR gameplay. The 14-inch, contentthat jumps right off the screen, whether you’re  <br>watching a movie or playing a fast-moving arena shooter.
+                      </small></small></p>
+                <span class="price">₹2,66,990</span>
+                <button class="add-to-cart" onclick="addToCart('Product 2', '₹2,66,990')">Add to Cart</button>
+            </div>
+        </section>
+    
+        <footer>
+            <div class="contact-info">
+                <h4>Contact Us</h4>
+                <p>Email:TRIggER@TRIGGER.com</p>
+                <p>Phone: 00000000</p>
+            </div>
+            <div class="social-media">
+                <h4>Connect with Us</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Den"><img src="twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </footer>
+    
+       
+    
+    
+</body>
+</html>
